@@ -11,11 +11,11 @@
 
 - The virtual machine is using [hypernova](https://github.com/airbnb/hypernova) for processing smartcontracts
 
-    [ ] - example contracts can be access at 
+    - example [contracts](./jobworker) can be access at 
 
-      [ ] - /s/aphrodite 
+      [ ] - http://localhost:8080/s/aphrodite 
 
-      [ ] - /s/simple
+      [ ] - http://localhost:8080/s/simple
 
 ### Use
 
