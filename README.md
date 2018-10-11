@@ -12,7 +12,9 @@
 - The virtual machine is using [hypernova](https://github.com/airbnb/hypernova) for processing smartcontracts
 
     [ ] - example contracts can be access at 
+
       [ ] - /s/aphrodite 
+
       [ ] - /s/simple
 
 ### Use
