@@ -7,12 +7,13 @@
 
 ### Process
 
-- The backend server is running nodejs and is contained inside of the
-  [src](./src) directory.
+- The backend server is running nodejs [src](./src/server.js) directory.
 
-- The virtual machine is using [hypernova](https://github.com/airbnb/hypernova)
-  for processing smartcontracts
-    [ ] - example contracts can be access at /s/aphrodite and /s/simple
+- The virtual machine is using [hypernova](https://github.com/airbnb/hypernova) for processing smartcontracts
+
+    [ ] - example contracts can be access at 
+      [ ] - /s/aphrodite 
+      [ ] - /s/simple
 
 ### Use
 
