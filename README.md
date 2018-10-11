@@ -29,13 +29,21 @@ npm install && npm start
 ### Layout
 
  [ ] - configs : application global configs
+
  [ ] - docs : collected documents
+
  [ ] - jobworker : virtual machine processing contracts
+
  [ ] - public : static web frontend
+
  [ ] - scripts : deployment scripts
+
  [ ] - src : code to server
+
   [ ] - config.js : server port and other server configs
+
  [ ] - test : not much yet
+
  [ ] - tools : tools for compilation
 
 
