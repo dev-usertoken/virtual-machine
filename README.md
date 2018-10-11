@@ -28,24 +28,22 @@ npm install && npm start
 
 ### Layout
 
- [ ] - configs : application global configs
+ [configs](./configs) : application global configs
 
- [ ] - docs : collected documents
+ [docs](./docs) : collected documents
 
- [ ] - jobworker : virtual machine processing contracts
+ [jobworker](./jobworker)  : virtual machine processing contracts
 
- [ ] - public : static web frontend
+ [public](./public): static web frontend
 
- [ ] - scripts : deployment scripts
+ [scripts](./scripts) : deployment scripts
 
- [ ] - src : code to server
+ [src](./src) : code to server
+  [config.js](./src/config.js) : server port and other server configs
 
-  [ ] - config.js : server port and other server configs
+ [test](./test) : not much yet
 
- [ ] - test : not much yet
-
- [ ] - tools : tools for compilation
-
+ [tools](./tools) : tools for compilation
 
 -----
 - refs: [react-server](README-orig.md)
