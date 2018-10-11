@@ -1,0 +1,6 @@
+git checkout manifest.yml
+git checkout public
+git checkout docker-build
+
+
+

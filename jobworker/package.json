@@ -1,0 +1,41 @@
+{
+  "name": "usertoken-job-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Job worker to support usertoken-miner.",
+  "license": "MIT",
+  "author": "Alex Davis <alex@alex2006hw.com>",
+  "main": "jobWorker.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "npm-run-all sort:package format;npm run transpile ",
+    "clean": "rm -rf build;mkdir -p build/jobs",
+    "format": "prettier --write \"./**/*{.js, .json}\" ",
+    "sort:package": "./node_modules/sort-package-json/index.js ",
+    "transpile": "concurrently \"npm run transpile:server\" \"npm run transpile:jobs\" \"npm run transpile:configs\" ",
+    "transpile:configs": "babel \"configs\" --out-dir \"build/configs\" --copy-files --ignore \"node_modules\" ",
+    "transpile:jobs": "babel \"jobs\" --out-dir \"build/jobs\" --copy-files --ignore \"node_modules\" ",
+    "transpile:server": "babel \"src\" --out-dir \"build\" --copy-files --ignore \"node_modules\""
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browserify": "^13.0.0",
+    "browserify-incremental": "^3.1.1",
+    "concurrently": "^3.5.1",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.9.2",
+    "sort-package-json": "^1.7.1"
+  }
+}

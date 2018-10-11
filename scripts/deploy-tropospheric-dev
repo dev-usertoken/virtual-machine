@@ -1,0 +1,20 @@
+export DATE=$(date +%Y%m.%d.%s)
+export TAG=$DATE
+export COMMENT="Automated release TAG $DATE"
+[ ! -z $1 ] && export COMMENT="$COMMENT : $1"
+\rm -rf deploy
+git clone \
+  https://usertoken@github.com/usertoken/Tropospheric.git \
+deploy
+rm -rf build-done/.git
+cp -r deploy/.git* build-done/
+cp manifest.yml build-done/
+{
+  echo $TAG at $DATE with $COMMENT
+  cd build-done
+  git add -A .
+  git commit -m $DATE
+  git tag -a $TAG -m "$COMMENT"
+  git push --follow-tags
+  cd ..
+}
