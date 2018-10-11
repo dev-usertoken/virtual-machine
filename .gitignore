@@ -5,7 +5,8 @@ node_modules*
 **/node_modules
 
 # Compiled output
-build*
+build-done/
+build/
 dist
 deploy
 
