@@ -18,9 +18,15 @@
 
     [ ] - http://localhost:8080/s/simple
 
-### Use
+### Prerequisits
+
+* nodejs 8.11.4 : use a version [manager](https://github.com/jasongin/nvs) for local install
+
+### Usage
 
 * build (automated dev) : open web browser to localhost:8080 to view
+
+* result at build-done
 
 ```
  npm start
