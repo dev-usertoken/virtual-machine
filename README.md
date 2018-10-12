@@ -35,22 +35,23 @@
 
 ### Layout
 
-[configs](./configs) : application global configs
+* [configs](./configs) : application global configs
 
-[docs](./docs) : collected documents
+* [docs](./docs) : collected documents
 
-[jobworker](./jobworker) : virtual machine processing contracts
+* [jobworker](./jobworker) : virtual machine processing contracts
 
-[public](./public): static web frontend
+* [public](./public): static web frontend
 
-[scripts](./scripts) : deployment scripts
+* [scripts](./scripts) : deployment scripts
 
-[src](./src) : code to server
-[config.js](./src/config.js) : server port and other server configs
+* [src](./src) : code to server
 
-[test](./test) : not much yet
+  * [config.js](./src/config.js) : server port and other server configs
 
-[tools](./tools) : tools for compilation
+* [test](./test) : not much yet
+
+* [tools](./tools) : tools for compilation
 
 ---
 
