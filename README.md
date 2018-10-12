@@ -30,7 +30,7 @@
  npm start
 ```
 
-* Run built and open http://localhost:8080 for frontend client
+* Build then open http://localhost:8080 for frontend client
 
 ```
 cd build-done && npm install && npm start
