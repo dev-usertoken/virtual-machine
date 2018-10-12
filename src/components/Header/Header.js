@@ -34,7 +34,7 @@ class Header extends React.Component {
           </Link>
           <div className={s.banner}>
             <h1 className={s.bannerTitle}>{HOSTNAME}</h1>
-            <p className={s.bannerDesc}>cloud portal tier 2</p>
+            <p className={s.bannerDesc}>Usertoken Virtual Machine</p>
           </div>
         </div>
       </div>
