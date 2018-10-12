@@ -2,10 +2,7 @@
   "name": "virtual-machine",
   "version": "0.0.1",
   "description": "nodejs virtual machine",
-  "keywords": [
-    "virtual-machine",
-    "javascript"
-  ],
+  "keywords": ["virtual-machine", "javascript"],
   "license": "MIT",
   "author": "Alex Davis <alex@usertoken.com>",
   "main": "server/server.js",
@@ -15,12 +12,7 @@
     "node": ">=8.11.4",
     "npm": ">=6.4.1"
   },
-  "browserslist": [
-    ">1%",
-    "last 4 versions",
-    "Firefox ESR",
-    "not ie < 9"
-  ],
+  "browserslist": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
   "dependencies": {
     "@babel/polyfill": "7.0.0-beta.36",
     "aphrodite": "1.2.5",
@@ -151,18 +143,9 @@
     "webpack-node-externals": "1.6.0"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --no-ignore --fix",
-      "git add --force"
-    ],
-    "*.{json,md,graphql}": [
-      "prettier --write",
-      "git add --force"
-    ],
-    "*.{css,less,styl,scss,sass,sss}": [
-      "stylelint --fix",
-      "git add --force"
-    ]
+    "*.{js,jsx}": ["eslint --no-ignore --fix", "git add --force"],
+    "*.{json,md,graphql}": ["prettier --write", "git add --force"],
+    "*.{css,less,styl,scss,sass,sss}": ["stylelint --fix", "git add --force"]
   },
   "scripts": {
     "precommit": "lint-staged",
@@ -178,25 +161,31 @@
     "test-cover": "yarn run test --coverage",
     "coverage": "yarn run test-cover && opn coverage/lcov-report/index.html",
     "clean": "npm run clean:root;npm run clean:jobworker;npm run clean:tmp ",
-    "clean:cache": "mv ~/.cache/virtual-machine ~/.cache/virtual-machine-deleted;rm -rf ~/.cache/virtual-machine-deleted;npm run clean:tmp &",
-    "clean:root": "rm -rf node_modules deploy build build-done;mkdir -p ~/.cache/virtual-machine/root/node_modules;ln -s ~/.cache/virtual-machine/root/node_modules . ",
-    "clean:jobworker": "cd jobworker;npm run clean;rm -rf node_modules;mkdir -p ~/.cache/virtual-machine/jobworker/node_modules;ln -s ~/.cache/virtual-machine/jobworker/node_modules . ",
+    "clean:cache":
+      "mv ~/.cache/virtual-machine ~/.cache/virtual-machine-deleted;rm -rf ~/.cache/virtual-machine-deleted;npm run clean:tmp &",
+    "clean:root":
+      "rm -rf node_modules deploy build build-done;mkdir -p ~/.cache/virtual-machine/root/node_modules;ln -s ~/.cache/virtual-machine/root/node_modules . ",
+    "clean:jobworker":
+      "cd jobworker;npm run clean;rm -rf node_modules;mkdir -p ~/.cache/virtual-machine/jobworker/node_modules;ln -s ~/.cache/virtual-machine/jobworker/node_modules . ",
     "clean:tmp": " rm -rf /tmp/npm* &",
     "copy": "babel-node tools/run copy",
     "bundle": "babel-node tools/run bundle",
-    "build:dev": "rm -rf src/configs;mkdir -p src/configs jobworker/configs;cp configs/dev/* src/configs/;cp configs/dev/* jobworker/configs/;babel-node tools/run build --release",
-    "build:prod": "rm -rf src/configs;mkdir -p src/configs jobworker/configs;cp configs/prod/* src/configs/;cp configs/prod/* jobworker/configs/;babel-node tools/run build --release",
+    "build:dev":
+      "rm -rf src/configs;mkdir -p src/configs jobworker/configs;cp configs/dev/* src/configs/;cp configs/dev/* jobworker/configs/;babel-node tools/run build --release",
+    "build:prod":
+      "rm -rf src/configs;mkdir -p src/configs jobworker/configs;cp configs/prod/* src/configs/;cp configs/prod/* jobworker/configs/;babel-node tools/run build --release",
     "build:jobs": "npm run build:jobworker;npm run postbuild ",
     "build:jobworker": "cd jobworker;npm run build ",
     "build": "npm-run-all -l -p build:jobworker build:dev ",
-    "postbuild": "rm -rf build/jobs && cp -r jobworker/build/* build && rm -rf build-done && mv build build-done",
+    "postbuild":
+      "rm -rf build/jobs && cp -r jobworker/build/* build && rm -rf build-done && mv build build-done",
     "build-stats": "yarn run build --release --analyse",
     "deploy:prod": "rm -rf deploy && ./scripts/deploy-prod",
     "deploy:dev": "rm -rf deploy && ./scripts/deploy-dev",
     "deploy": "npm run deploy:dev ",
     "render": "babel-node tools/run render",
     "serve": "babel-node tools/run runServer",
-    "postinstall": "cd jobworker && npm install ",
+    "postinstall": "./scripts/getSubmodules && cd jobworker && npm install ",
     "unlock": "find . -name package-lock.json | xargs rm -f",
     "start": "npm install && npm run build",
     "dev": "cd build-done && npm install && npm start",

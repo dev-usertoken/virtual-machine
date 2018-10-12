@@ -1,0 +1,3 @@
+[submodule "jobworker"]
+	path = jobworker
+	url = git@github.com:dev-usertoken/template-jobworker.git
