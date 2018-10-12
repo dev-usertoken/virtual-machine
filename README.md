@@ -18,7 +18,7 @@
 
     [ ] - http://localhost:8080/s/simple
 
-### Prerequisits
+### Prerequisite
 
 * nodejs 8.11.4 : use a version [manager](https://github.com/jasongin/nvs) for local install
 
