@@ -8,9 +8,9 @@
 
 ### Process
 
-* The backend server is running nodejs [src](./src/server.js) directory.
+* The backend server nodejs [src](./src/server.js) file.
 
-* The virtual machine is using [hypernova](https://github.com/airbnb/hypernova) for processing smartcontracts
+* The virtual machine is using [hypernova](https://github.com/airbnb/hypernova) to processing smartcontracts
 
   * example [contracts](./jobworker) can be access at
 
@@ -24,9 +24,10 @@
 
 ### Usage
 
-* build (automated dev) : open web browser to localhost:8080 to view
+* build (automated dev) : web browser to http://localhost:8080 for frontend
+  client
 
-* result at build-done
+* compiled result at build-done
 
 ```
  npm start
