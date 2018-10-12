@@ -163,7 +163,7 @@ app.get(
 
 //let HYPER_PORT = getAppState('HYPER_PORT') || process.env.HYPER_PORT || 9600;
 //let HYPER_HOST = getAppState('HYPER_HOST') || process.env.HYPER_HOST || 'localhost';
-let HYPER_URL = getAppState('HYPER_URL') || 'http://localhost:9600/batch';
+let HYPER_URL = getAppState('HYPER_URL') || 'http://localhost:8081/batch';
   console.log('1.server hypernova ==> appState HYPER_URL : ', HYPER_URL)
 //var HYPER_PORT, HYPER_HOST
 //var HYPER_URL
