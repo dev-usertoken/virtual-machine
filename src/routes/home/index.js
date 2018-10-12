@@ -18,10 +18,12 @@ async function action({ fetch }) {
     }),
   });
   const { data } = await resp.json();
+  // let data = { }
+  // data.news { 'title': 'TITLE_HERE', 'link': 'LINK_HERE', 'content': 'CONTENT_HERE' }
   if (!data || !data.news) throw new Error('Failed to load the news feed.');
   return {
     chunks: ['home'],
-    title: 'React Starter Kit',
+    title: 'Usertoken SmartContracts Manager',
     component: (
       <Layout>
         <Home news={data.news} />
