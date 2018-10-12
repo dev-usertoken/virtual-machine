@@ -8,7 +8,7 @@ const keyArray = ['name', 'location', 'gender', 'school'];
 function Attribute(props) {
   return (
     <span className="reveal">
-      {props.name} ": " {props.value}
+      {props.name} :  {props.value}
       <button className="reveal" onClick={props.onClick}>
         reveal
       </button>
