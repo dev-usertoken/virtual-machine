@@ -24,13 +24,16 @@
 
 ### Usage
 
-* build (automated dev) : web browser to http://localhost:8080 for frontend
-  client
-
-* compiled result at build-done
+* build (automated dev)
 
 ```
  npm start
+```
+
+* Run built and open http://localhost:8080 for frontend client
+
+```
+cd build-done && npm install && npm start
 ```
 
 ### Layout
