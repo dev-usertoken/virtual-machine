@@ -1,5 +1,5 @@
 // ///
-export const HOSTNAME = 'usertoken virtual machine';
+export const HOSTNAME = 'Usertoken SmartContract Manager';
 export const DATA_FILE = `data/data-${HOSTNAME}`;
 export const DEVICE_ID = false;
 
