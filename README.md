@@ -10,7 +10,7 @@
 
 * The backend server nodejs [src](./src/server.js) file.
 
-* The virtual machine is using [hypernova](https://github.com/airbnb/hypernova) to processing smartcontracts
+* The virtual machine is using [hypernova](https://github.com/airbnb/hypernova) for smartcontracts
 
   * example [contracts](./jobworker) can be access at
 
