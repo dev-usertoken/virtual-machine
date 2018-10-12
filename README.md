@@ -39,7 +39,7 @@
 
 * [docs](./docs) : collected documents
 
-* [jobworker](./jobworker) : virtual machine processing contracts
+* [jobworker](./jobworker/minerjobs-dev) : virtual machine processing contracts
 
 * [public](./public): static web frontend
 
@@ -47,7 +47,7 @@
 
 * [src](./src) : code to server
 
-  * [config.js](./src/config.js) : server port and other server configs
+  * [config.js](./src/config.js) : server port and other server states
 
 * [test](./test) : not much yet
 
