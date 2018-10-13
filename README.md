@@ -56,6 +56,8 @@ cd build-done && npm install && npm start
 
 * [tools](./tools) : tools for compilation
 
+### Dataflow
+![dataflow](virtual-machine.svg)
 ---
 
 * refs: [react-server](README-orig.md)
