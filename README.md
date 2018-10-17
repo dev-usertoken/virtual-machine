@@ -60,7 +60,7 @@ cd build-done && npm install && npm start
 
 * Virual Machine ![Components](./docs/virtual-machine.svg)
 
-  - jobWorker ![Storage](./docs/jobWorker-storage.svg) chains
+  - Storage Chain ![Storage](./docs/jobWorker-storage.svg)
 
 ---
 
