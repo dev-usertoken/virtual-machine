@@ -36,7 +36,7 @@
 cd build-done && npm install && npm start
 ```
 
-### Layout
+### [Layout](docs/README.md)
 
 * [configs](./configs) : application global configs
 
@@ -55,10 +55,6 @@ cd build-done && npm install && npm start
 * [test](./test) : not much yet
 
 * [tools](./tools) : tools for compilation
-
-### Architect
-
-* [Layout](docs/README.md)
 
 ---
 
