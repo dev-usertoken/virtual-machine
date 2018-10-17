@@ -1,9 +1,9 @@
 # Architect
 -------------
 
-* Virual Machine ![Components](virtual-machine.svg)
+* Virual Machine ![Components](virual-machine/virtual-machine.svg)
 
-  - Storage Chain ![Storage](jobWorker-storage.svg)
+  - Storage Chain ![Storage](jobWorker/jobWorker-storage.svg)
 
 ---
 * usertoken @2018
