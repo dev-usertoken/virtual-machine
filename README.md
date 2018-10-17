@@ -58,9 +58,7 @@ cd build-done && npm install && npm start
 
 ### Architect
 
-* Virual Machine ![Components](./docs/virtual-machine.svg)
-
-  - Storage Chain ![Storage](./docs/jobWorker-storage.svg)
+* [Layout](docs/README.md)
 
 ---
 
