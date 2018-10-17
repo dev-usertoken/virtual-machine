@@ -50,15 +50,19 @@ cd build-done && npm install && npm start
 
 * [src](./src) : code to server
 
-  * [config.js](./src/config.js) : server port and other server states
+  - [config.js](./src/config.js) : server port and other server states
 
 * [test](./test) : not much yet
 
 * [tools](./tools) : tools for compilation
 
-### Dataflow
-![dataflow](virtual-machine.svg)
+### Architect
+
+* Virual Machine ![Components](./docs/virtual-machine.svg)
+
+  - jobWorker ![Storage](./docs/jobWorker-storage.svg) chains
+
 ---
 
-* refs: [react-server](README-orig.md)
+* refs: [react-server](docs/vendors/README.md)
 * usertoken @2018
